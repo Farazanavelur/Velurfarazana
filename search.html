@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Product Search Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #232F3E;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.category-dropdown, .search-bar, .search-button {
+    margin: 0 5px;
+}
+
+.category-dropdown {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #febd69;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #232F3E;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1> AMAZON PRODUCT SEARCH</h1>
+        <div class="search-container">
+            <select class="category-dropdown">
+                <option value="">All Categories</option>
+                <option value="books">Books</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="home">Home & Kitchen</option>
+            </select>
+            <input type="text" class="search-bar" placeholder="Search for products...">
+            <button class="search-button">Search</button>
+        </div>
+    </header>
+    
+    <main>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/81vxWpPpgNL.jpg" alt="SAMSUNG S24 ULTRA">
+                <h2>SAMSUNG S24 ULTRA</h2>
+                <p>$19.99</p>
+            </div>
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6jAzwWm-wBzT-2GgpOAzca4qKaCDOtC7M3g&s" alt=" IPHONE 15PRO MAX">
+                <h2>IPHONE 15PRO MAX</h2>
+                <p>$29.99</p>
+            </div>
+            <div class="product-card">
+                <img src="https://img.damensch.com/products/johnny_polo_wisdom_wine_(5).jpg?fm=webp&h=500" alt="Product 3">
+                <h2> T SHIRT</h2>
+                <p>$39.99</p>
+            </div>
+            <div class="product-card">
+                <img src="https://www.jiomart.com/images/product/original/494226842/apple-watch-series-9-gps-45mm-midnight-aluminium-case-with-midnight-sport-band-m-l-digital-o494226842-p604569093-6-202309141257.jpeg?im=Resize=(420,420)" alt="I WATCH ">
+                <h2>I WATCH</h2>
+                <p>$49.99</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Product Search Clone</p>
+    </footer>
+</body>
+</html>
